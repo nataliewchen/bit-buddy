@@ -1,28 +1,28 @@
-import { useState, useContext } from "react";
-import { AppContext } from "../App";
+// import { useState, useContext } from "react";
+// import { AppContext } from "../App";
 
 const RangeForm = () => {
-  const context = useContext(AppContext);
-  if (!context) {
-    throw new Error("AppContext is not available");
-  }
-  const { dispatch } = context;
+  // const context = useContext(AppContext);
+  // if (!context) {
+  //   throw new Error("AppContext is not available");
+  // }
+  // const { dispatch } = context;
 
-  const [start, setStart] = useState<number | "">("");
-  const [end, setEnd] = useState<number | "">("");
+  // const [start, setStart] = useState<number | "">("");
+  // const [end, setEnd] = useState<number | "">("");
 
-  const handleAddRange = (e: React.MouseEvent) => {
-    e.preventDefault();
-    dispatch({
-      type: "add-range",
-      payload: {
-        start: start || 0,
-        end: end || 0,
-      },
-    });
-    setStart("");
-    setEnd("");
-  };
+  // const handleAddRange = (e: React.MouseEvent) => {
+  //   e.preventDefault();
+  //   dispatch({
+  //     type: "add-range",
+  //     payload: {
+  //       start: start || 0,
+  //       end: end || 0,
+  //     },
+  //   });
+  //   setStart("");
+  //   setEnd("");
+  // };
 
   return (
     <>

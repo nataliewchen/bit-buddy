@@ -84,6 +84,7 @@ const Display = () => {
               key={index}
             >
               {63 - index}
+              {char}
             </div>
           );
         })}

@@ -3,10 +3,8 @@ import "./App.css";
 import Header from "./components/Header";
 import Form from "./components/Form";
 import Display from "./components/Display";
-import RangeForm from "./components/RangeForm";
 
 interface Range {
-  id: number;
   displayStart: number;
   displayEnd: number;
   trueStart: number;
@@ -108,7 +106,10 @@ const removeSpreadNumsFromSet = (
   return occupied;
 };
 
-function reducer(state: State, action: Action) {
+const reducer: React.Reducer<State, Action> = (
+  state: State,
+  action: Action
+) => {
   switch (action.type) {
     case "set-input":
       return {
@@ -177,7 +178,7 @@ function reducer(state: State, action: Action) {
     default:
       return state;
   }
-}
+};
 
 export const AppContext = createContext<AppContextType | undefined>(undefined);
 
