@@ -1,0 +1,168 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.input-form {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.input-form .form-col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.input-form input {
+  font-family: 'Roboto-Mono', monospace;
+  font-size: 20px;
+  padding: 4px;
+  width: 280px;
+}
+
+/* .input-wrapper {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+
+} */
+/* 
+.range-form .form-control {
+  margin: 8px 0;
+  display: flex;
+  align-items: center; 
+  gap: 8px;
+}
+
+.range-form input {
+  padding: 4px;
+  width: 50px;
+}
+
+.binary-table {
+  margin-top: 40px;
+  border-collapse: collapse;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.binary-table td,
+.binary-table th {
+  border: 1px solid #5f5f5f;
+  padding: 2px;
+  text-align: center;
+  min-width: 20px;
+}
+
+.binary-table th {
+  font-size: 0.6em;
+  padding: 4px 0;
+}
+
+.binary-table td {
+  font-size: 1.1em;
+}
+
+.binary-table .divider {
+  height: 20px;
+}
+
+.binary-table .divider td {
+  border-color: #00000000;
+} */
+
+.display-grid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(64, 24px);
+  grid-template-rows: repeat(3, 24px);
+  grid-auto-rows: 64px;
+  padding: 1px;
+  gap: 1px;
+  position: relative;
+  /* background-color: #5c5c5c; */
+  /* border-top: 1px solid */
+}
+
+.grid-item {
+  align-content: center;
+  text-align: center;
+}
+
+.display-grid .border {
+    outline: 1px solid #6c6c6c;
+}
+
+.display-grid .index {
+  grid-row: 1 / span 1;
+  font-size: 0.6em;
+  font-weight: 700;
+  cursor: pointer;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+     -moz-user-select: none; /* Old versions of Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+          user-select: none;
+}
+
+.display-grid .index:hover,
+.display-grid .selected {
+  background-color: rgb(113, 113, 71);
+}
+
+.display-grid .binary {
+  grid-row: 2 / span 1;
+}
+
+.display-grid .divider {
+  height: 20px;
+  grid-column: 1/-1;
+  background-color: #242424;
+}
+
+.display-grid .range {
+  text-align: center;
+  grid-row: 4 / span 1;
+  font-size: 1.2em;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.display-grid .range .position {
+  font-size: 0.8em;
+  margin-top: 4px;
+  font-weight: 400;
+}
+
+.display-grid .range .hex {
+  padding: 2px;
+  outline: 2px solid #d5d5d5;
+}
+
+.display-grid .highlight {
+  z-index: -1;
+  grid-row: 1 / span 2;
+}
+
+/* .highlight {
+  position: absolute;
+} */
+
+
